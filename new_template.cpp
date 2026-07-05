@@ -77,7 +77,7 @@ void pre(ll n){
     inv[n]=exp(fact[n], mod-2);
     i=n;
     while(i>0){
-        inv[i-1] = mul({inv[i]*i});
+        inv[i-1] = mul({inv[i],i});
         i--;
     }
 }
